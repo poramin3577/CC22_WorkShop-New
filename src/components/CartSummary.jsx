@@ -6,6 +6,7 @@ function CartSummary({cart}) {
     // <div className='max-md:hidden p-2 text-amber-900 w-1/3'>
     <div className=' p-2 text-amber-900 w-1/3'>
       <h2 className='text-2xl py-2 text-slate-600'>Cart Items :</h2>
+      <pre>{JSON.stringify(cart, null, 2)}</pre>
       {cart.map(el=>(
         <CartItem key={el.id} item={el}/>
       ))}
