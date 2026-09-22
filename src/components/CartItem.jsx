@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CartItem() {
+function CartItem(item) {
   return (
     <div className='flex justify-between items-center p-1 rounded bg-lime-50'>
       <p>Product Title</p>

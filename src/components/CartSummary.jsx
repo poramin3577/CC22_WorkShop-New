@@ -1,14 +1,14 @@
 import React from 'react'
 import CartItem from './CartItem'
 
-function CartSummary() {
+function CartSummary({cart}) {
   return (
     // <div className='max-md:hidden p-2 text-amber-900 w-1/3'>
     <div className=' p-2 text-amber-900 w-1/3'>
-      <h2 className='text-2xl py-2 text-slate-600'>Cart Items</h2>
-      <CartItem />
-      <CartItem />
-      <CartItem />
+      <h2 className='text-2xl py-2 text-slate-600'>Cart Items :</h2>
+      {cart.map(el=>(
+        <CartItem key={el.id} item={el}/>
+      ))}
       <div className='divider opacity-50'>Total</div>
       <div className="flex justify-between px-1">
         <div className="font-bold">Total</div>

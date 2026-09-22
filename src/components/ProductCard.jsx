@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProductCard({product}) {
+function ProductCard({product, addToCart}) {
   return (
     <div className="card bg-base-100 w-60 h-[420px] shadow-sm">
   <figure className='h-48  shrink-0 p-4'>
@@ -15,7 +15,7 @@ function ProductCard({product}) {
     <p className='line-clamp-3 text-base leading-7'>{product.description}</p>
     <div className="flex justify-between items-center mt-auto">
       <p className='text-red-400 text-xl'>{product.price} THB</p>
-      <button className="btn btn-sm btn-primary">Add to Cart</button>
+      <button className="btn btn-sm btn-primary" onClick={addToCart}>Add to Cart</button>
     </div>
   </div>
 </div>
