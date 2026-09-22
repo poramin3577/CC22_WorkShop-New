@@ -3,7 +3,8 @@ import CartItem from './CartItem'
 
 function CartSummary() {
   return (
-    <div className='max-md:hidden p-2 text-amber-900 w-1/3'>
+    // <div className='max-md:hidden p-2 text-amber-900 w-1/3'>
+    <div className=' p-2 text-amber-900 w-1/3'>
       <h2 className='text-2xl py-2 text-slate-600'>Cart Items</h2>
       <CartItem />
       <CartItem />
